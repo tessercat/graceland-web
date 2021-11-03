@@ -46,6 +46,23 @@ main section article figure img {
   width: 100%;
   height: auto;
 }
+footer {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  font-size: smaller;
+  text-align: center;
+}
+footer a {
+  color: #ced4da;
+  text-decoration: none;
+}
+footer ul {
+  list-style: none;
+  padding: inherit;
+}
+footer li {
+  margin-bottom: 1rem;
+}
     </style>
   </head>
   <body>
@@ -79,5 +96,12 @@ foreach ($movies as $movie) {
 ?>
       </section>
     </main>
+   <footer>
+     <nav>
+       <ul>
+         <li><a href="/" title="Graceland">Home</a></li>
+       </ul>
+     </nav>
+   </footer>
   </body>
 </html>
