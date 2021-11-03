@@ -38,7 +38,8 @@ ffmpeg -hide_banner -y -i $SLUG.mp4 \
   -vf scale=w=720:h=480:force_original_aspect_ratio=decrease -c:v h264 -profile:v main -crf 20 -sc_threshold 0 -g 48 -keyint_min 48 -hls_time 4 -hls_playlist_type vod -b:v 1600k -maxrate 1712k -bufsize 2400k -hls_segment_filename $SLUG/480p_%03d.ts $SLUG/480p.m3u8
 ```
 
-Place the generated files in `/opt/graceland/media/<slug>`,
-add a poster at `/opt/graceland/media/<slug>/poster.jpeg`,
-chown the files to `www-data:www-data`
-and navigate to `https://graceland.ca/player?<slug>`
+Place the generated files in `/opt/graceland/media/<slug>`
+and add a poster at `/opt/graceland/media/<slug>/poster.jpeg`.
+Chown the files to `www-data:www-data`
+and navigate to `https://graceland.ca/marquee`
+or `https://graceland.ca/player?<slug>`.
