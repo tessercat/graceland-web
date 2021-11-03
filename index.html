@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sayings</title>
+    <title>Graceland</title>
     <style type="text/css" media="screen">
 html {
   font: normal normal normal 1rem/1.6 sans-serif;
   font-size: 1rem;
-  scroll-behavior: smooth;
 }
 body {
   color: #ced4da;
@@ -18,32 +17,24 @@ body {
 main {
   max-width: 800px;
   margin: 0 auto 0;
-  padding: 0 1rem 1.5rem;
 }
 main section {
-  background: #444;
-  margin-top: 1rem;
-  padding: 0 1rem 1.5rem;
+  background: black;
+  margin-bottom: 1rem;
+  padding: 0 1rem 2.5rem;
   border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
 }
 main section h1 {
   margin: 0;
   padding-top: 1rem;
-  text-align: center;
-}
-main section h1 a {
-  display: block;
-  color: #ced4da;
   font-size: 1.3rem;
   font-weight: normal;
-  margin: 0;
-  text-decoration: none;
+  text-align: center;
 }
-main section p {
-  display: none;
-}
-main section:target p {
-  display: block;
+main section article {
+  text-align: center;
 }
 main section article blockquote {
   margin: 0;
@@ -52,25 +43,21 @@ main section article blockquote p {
   margin-bottom: 0;
 }
 main section article figcaption {
-  display: none;
   font-size: smaller;
   font-style: italic;
-}
-main section:target article figcaption {
-  display: block;
 }
     </style>
   </head>
   <body>
     <main>
 
-      <section id="knowledge">
-        <h1><a href="#knowledge">Knowledge</a></h1>
+      <section>
+        <h1>Knowledge</h1>
         <article>
           <blockquote>
             <p>I like simple, if it's complex then I don't understand it.</p>
           </blockquote>
-          <figcaption>Seymour Cray</a></figcaption>
+          <figcaption>Seymour Cray</figcaption>
         </article>
         <article>
           <blockquote>
@@ -92,15 +79,14 @@ main section:target article figcaption {
         </article>
         <article>
           <blockquote>
-            <p>The greatest thing you'll ever learn is just to love and be loved in return.
-</p>
+            <p>The greatest thing you'll ever learn is just to love and be loved in return.</p>
           </blockquote>
           <figcaption>The Sitar, Moulin Rouge</figcaption>
         </article>
       </section>
 
-      <section id="belief">
-        <h1><a href="#belief">Belief</a></h1>
+      <section>
+        <h1>Belief</h1>
         <article>
           <blockquote>
             <p>People need stories more than bread itself. They tell us how to live, and why.</p>
@@ -133,15 +119,15 @@ main section:target article figcaption {
         </article>
         <article>
           <blockquote>
-            <p>Civilization exists by geological consent, subject to change without notice.</p>
-          </blockquote>
-          <figcaption>Will Durant</figcaption>
-        </article>
-        <article>
-          <blockquote>
             <p>As far as the planet is concerned, it is not concerned. It is a lump of rock. It is inhabited by clumps of self-replicating molecules we call life forms, the purpose of which is to reverse entropy for as long as possible, by capturing energy from the sun or from other life forms. The ecosystem is simply the flow of captured energy between these life forms. It has no values, no wishes, no demands. It neither offers nor recognises cruelty or kindness.</p>
           </blockquote>
           <figcaption>George Monbiot</figcaption>
+        </article>
+        <article>
+          <blockquote>
+            <p>Civilization exists by geological consent, subject to change without notice.</p>
+          </blockquote>
+          <figcaption>Will Durant</figcaption>
         </article>
         <article>
           <blockquote>
@@ -157,8 +143,8 @@ main section:target article figcaption {
         </article>
       </section>
 
-      <section id="purpose">
-        <h1><a href="#purpose">Purpose</a></h1>
+      <section>
+        <h1>Purpose</h1>
         <article>
           <blockquote>
             <p>Sum ergo amo.</p>
@@ -191,9 +177,6 @@ main section:target article figcaption {
         </article>
       </section>
 
-      <section>
-        <h1><a href="#">Unity</a></h1>
-      </section>
    </main>
   </body>
 </html>
