@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php print ucfirst(strval($_SERVER['QUERY_STRING']))?></title>
+    <title><?php print ucwords(str_replace('-', ' ', $_SERVER['QUERY_STRING'])); ?></title>
     <style type="text/css" media="screen">
       #player {
         background-color: black;
