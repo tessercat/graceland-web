@@ -36,10 +36,14 @@ main section h1 {
 main section article {
   text-align: center;
 }
+main section article + article {
+  margin-top: 3rem;
+}
 main section article figure {
   height: 0;
   overflow: hidden;
   padding-bottom: 50%;
+  margin-bottom: 0.25rem;
   position: relative;
 }
 main section article figure img {
@@ -75,7 +79,7 @@ if ($handle = opendir('/opt/graceland/media')) {
   while (false !== ($entry = readdir($handle))) {
     if ($entry != "." && $entry != "..") {
       $movie = new Ds\Map();
-      $movie->put('title', ucfirst($entry));
+      $movie->put('title', ucwords(str_replace('-', ' ', $entry)));
       $movie->put("player", "/player?$entry");
       $movie->put('poster', "/media/$entry/poster.jpg");
       $movies->push($movie);
