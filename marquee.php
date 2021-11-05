@@ -14,41 +14,41 @@ body {
   background: #1f2022;
   font-size: 1rem;
 }
-main {
-  max-width: 800px;
-  margin: 0 auto 0;
+header {
+  margin: 1rem 0 1rem;
 }
-main section {
-  background: black;
-  margin-bottom: 1rem;
-  padding: 0 1rem 2.5rem;
-  border-radius: 10px;
-  border-style: solid;
-  border-width: thin;
-}
-main section h1 {
+header h1 {
   margin: 0;
-  padding-top: 1rem;
   font-size: 1.3rem;
   font-weight: normal;
   text-align: center;
 }
-main section article {
+main {
+  max-width: 800px;
+  margin: 0 auto 0;
+  padding: 2rem;
+  background: black;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 2rem;
+}
+main article {
   text-align: center;
 }
-main section article + article {
-  margin-top: 3rem;
-}
-main section article figure {
+main article figure {
   height: 0;
   overflow: hidden;
-  padding-bottom: 50%;
-  margin-bottom: 0.25rem;
+  padding-bottom: 66%;
   position: relative;
+  margin: 0;
 }
-main section article figure img {
+main article figure img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 footer {
   margin-top: 3rem;
@@ -70,9 +70,10 @@ footer li {
     </style>
   </head>
   <body>
+    <header>
+      <h1>Now Playing</h1>
+    </header>
     <main>
-      <section>
-        <h1>Now Playing</h1>
 <?php
 $movies = new Ds\Vector();
 if ($handle = opendir('/opt/graceland/media')) {
@@ -98,14 +99,13 @@ foreach ($movies as $movie) {
   echo "</article>\n";
 }
 ?>
-      </section>
     </main>
-   <footer>
-     <nav>
-       <ul>
-         <li><a href="/" title="Graceland">Home</a></li>
-       </ul>
-     </nav>
-   </footer>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="/" title="Graceland">Home</a></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
