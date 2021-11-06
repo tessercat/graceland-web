@@ -75,27 +75,17 @@ footer li {
     </header>
     <main>
 <?php
-$movies = new Ds\Vector();
-if ($handle = opendir('/opt/graceland/media')) {
-  while (false !== ($entry = readdir($handle))) {
-    if ($entry != "." && $entry != "..") {
-      $movie = new Ds\Map();
-      $movie->put('title', ucwords(str_replace('-', ' ', $entry)));
-      $movie->put("player", "/player?$entry");
-      $movie->put('poster', "/media/$entry/poster.jpg");
-      $movies->push($movie);
-    }
-  }
-  closedir($handle);
-}
+$file = '/opt/graceland/media/now-playing.json';
+$movies = json_decode(file_get_contents($file));
 foreach ($movies as $movie) {
+  $caption = ucwords(str_replace('-', ' ', $movie->slug));
   echo "<article>\n";
   echo "  <figure>\n";
-  echo '    <a href="' . $movie->get('player') . "\">\n";
-  echo '      <img src="' . $movie->get('poster') . "\">\n";
+  echo "    <a href=\"/player?$movie->slug\" title=\"$movie->description\">\n";
+  echo "      <img src=\"/media/$movie->slug/poster.jpg\">\n";
   echo "    </a>\n";
   echo "  </figure>\n";
-  echo '  <figcaption>' . $movie->get('title') . "</figcaption>\n";
+  echo "  <figcaption>$caption</figcaption>\n";
   echo "</article>\n";
 }
 ?>
