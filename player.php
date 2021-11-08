@@ -1,9 +1,14 @@
 <!DOCTYPE html>
+<?php
+parse_str($_SERVER['QUERY_STRING'], $query);
+$target = array_key_first($query);
+$title = ucwords(str_replace('-', ' ', $target));
+?>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php print ucwords(str_replace('-', ' ', $_SERVER['QUERY_STRING'])); ?></title>
+    <title><?php echo $title; ?></title>
     <style type="text/css" media="screen">
       #player {
         background-color: black;
@@ -19,8 +24,8 @@
   <body>
     <video id="player"
            preload="none"
-           src="/media/<?php print_r($_SERVER['QUERY_STRING']) ?>/playlist.m3u8"
-           poster="/media/<?php print_r($_SERVER['QUERY_STRING']) ?>/poster.jpg"
+           src="/media/<?php echo $target; ?>/playlist.m3u8"
+           poster="/media/<?php echo $target; ?>/poster.jpg"
            controls>
     </video>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
