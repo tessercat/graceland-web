@@ -1,13 +1,19 @@
-<!DOCTYPE html>
 <?php
 parse_str($_SERVER['QUERY_STRING'], $query);
 $target = array_key_first($query);
 $title = ucwords(str_replace('-', ' ', $target));
 ?>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="<?php echo $title; ?>"/>
+    <meta property="og:type" content="video.other"/>
+    <meta property="og:image" content="https://graceland.ca/media/<?php echo $target; ?>/thumb.jpg"/>
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="300"/>
+    <meta property="og:url" content="https://graceland.ca/player?<?php echo $target; ?>"/>
     <title><?php echo $title; ?></title>
     <style type="text/css" media="screen">
       #player {
