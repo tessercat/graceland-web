@@ -50,6 +50,9 @@ main article figure img {
   height: auto;
   border-radius: 10px;
 }
+main article figcaption {
+  margin: 0.5rem 1rem;
+}
 footer {
   margin-top: 3rem;
   margin-bottom: 4rem;
@@ -78,14 +81,14 @@ footer li {
 $file = '/opt/graceland/media/now-playing.json';
 $movies = json_decode(file_get_contents($file));
 foreach ($movies as $movie) {
-  $caption = ucwords(str_replace('-', ' ', $movie->slug));
+  $title = ucwords(str_replace('-', ' ', $movie->slug));
   echo "<article>\n";
   echo "  <figure>\n";
-  echo "    <a href=\"/player?$movie->slug\" title=\"$movie->description\">\n";
+  echo "    <a href=\"/player?$movie->slug\" title=\"$title\">\n";
   echo "      <img src=\"/media/$movie->slug/poster.jpg\">\n";
   echo "    </a>\n";
   echo "  </figure>\n";
-  echo "  <figcaption>$caption</figcaption>\n";
+  echo "  <figcaption>$movie->description</figcaption>\n";
   echo "</article>\n";
 }
 ?>
