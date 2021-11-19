@@ -36,9 +36,9 @@ $title = ucwords(str_replace('-', ' ', $target));
     </video>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script>
-      let player = document.getElementById('player');
+      const player = document.getElementById('player');
       if (!player.canPlayType('application/vnd.apple.mpegurl') && Hls.isSupported()) {
-        let hls = new Hls();
+        const hls = new Hls();
         hls.loadSource(player.src);
         hls.attachMedia(player);
       }
