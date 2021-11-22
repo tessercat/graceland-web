@@ -78,7 +78,7 @@ footer li {
     </header>
     <main>
 <?php
-$file = '/opt/graceland/media/now-playing.json';
+$file = '/opt/graceland/media/marquee.json';
 $movies = json_decode(file_get_contents($file));
 foreach ($movies as $movie) {
   $title = ucwords(str_replace('-', ' ', $movie->slug));
@@ -97,6 +97,7 @@ foreach ($movies as $movie) {
       <nav>
         <ul>
           <li><a href="/" title="Graceland">Home</a></li>
+          <li><a href="/contact" title="Contact Graceland">Contact</a></li>
         </ul>
       </nav>
     </footer>
