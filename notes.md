@@ -1,4 +1,4 @@
-Eternal because every ending is a new beginning, infinite because everything circles back to where it started, perfect because it moves indivisibly as one. Indescribably vast, it dwindles to nothing at all.
+Eternal because every ending is a new beginning, infinite because everything circles back to where it started, perfect because it moves indivisibly as one, inconceivably vast, dwindling to nothing at all.
 
 Love gives us courage, saving lets us spend, not bossing people around gets the best results.
 
@@ -6,13 +6,13 @@ Love gives us courage, saving lets us spend, not bossing people around gets the 
 function liveLongAndProsper(
      conservation = true,
      cooperation = true) {
-   adaptability = conservation;
-   potential = adaptability;
-   opportunity = false;
-   risk = false;
+   const adaptability = conservation;
+   const potential = adaptability;
+   let opportunity = false;
    if (potential) {
      opportunity = true;
    }
+   let risk = false;
    if (opportunity) {
      risk = true;
    }
@@ -25,4 +25,4 @@ function liveLongAndProsper(
 
 Make it plain, keep it simple, be less needy, don't be greedy.
 
-Be like water. Water helps everything and takes people's shit. It's consistent, open, tolerant, kind, fair, useful and adaptable, and above all, it doesn't get angry and hold grudges.
+Be like water. Water helps everyone, but it's not arrogant, it takes people's shit. It's consistent, open, patient, kind, fair, useful and adaptable, and above all, it's not arrogant, so no one resents it.

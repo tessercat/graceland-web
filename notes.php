@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Notes to Self</title>
+    <title>Notes to self</title>
     <style type="text/css" media="screen">
 html {
   font: normal normal normal 1rem/1.6 sans-serif;
