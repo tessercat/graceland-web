@@ -59,7 +59,6 @@ echo MarkdownExtra::defaultTransform(file_get_contents($file));
      <nav>
        <ul>
           <li><a href="/" title="Graceland">Home</a></li>
-          <li><a href="/contact" title="Contact Graceland">Contact</a></li>
        </ul>
      </nav>
    </footer>
