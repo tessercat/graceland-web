@@ -34,7 +34,7 @@ $title = ucwords(str_replace('-', ' ', $target));
            poster="/media/<?php echo $target; ?>/poster.jpg"
            controls>
     </video>
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="/hls-v112.js"></script>
     <script>
       const player = document.getElementById('player');
       if (!player.canPlayType('application/vnd.apple.mpegurl') && Hls.isSupported()) {
