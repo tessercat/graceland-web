@@ -15,7 +15,7 @@ $title = ucwords(str_replace('-', ' ', $target));
     <meta property="og:image:height" content="300"/>
     <meta property="og:url" content="https://graceland.ca/player?<?php echo $target; ?>"/>
     <title><?php echo $title; ?></title>
-    <style type="text/css" media="screen">
+    <style>
       #player {
         background-color: black;
         position: absolute;

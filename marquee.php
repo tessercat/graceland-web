@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Now Playing</title>
-    <style type="text/css" media="screen">
+    <style>
 html {
   font: normal normal normal 1rem/1.6 sans-serif;
   font-size: 1rem;
