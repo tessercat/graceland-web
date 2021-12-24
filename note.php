@@ -5,44 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Note to self</title>
     <style>
-html {
-  font: normal normal normal 1rem/1.6 sans-serif;
-  font-size: 1rem;
-}
-body {
-  color: #ced4da;
-  background: #1f2022;
-  font-size: 1rem;
-}
-main {
-  max-width: 800px;
-  margin: 0 auto 0;
-}
-main section {
-  background: black;
-  padding: 0 1rem 0;
-  border-radius: 10px;
-  border-style: solid;
-  border-width: thin;
-  text-align: center;
-}
-footer {
-  margin-top: 3rem;
-  margin-bottom: 4rem;
-  font-size: smaller;
-  text-align: center;
-}
-footer a {
-  color: #ced4da;
-  text-decoration: none;
-}
-footer ul {
-  list-style: none;
-  padding: inherit;
-}
-footer li {
-  margin-bottom: 1rem;
-}
+<?php include 'graceland.css'; ?>
     </style>
   </head>
   <body>
