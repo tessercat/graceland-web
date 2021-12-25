@@ -3,6 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Now Playing"/>
+    <meta property="og:type" content="video.other"/>
+    <meta property="og:image" content="https://graceland.ca/marquee.jpg"/>
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="300"/>
+    <meta property="og:url" content="https://graceland.ca/marquee"/>
     <title>Now Playing</title>
     <style>
 <?php include 'marquee.css'; ?>

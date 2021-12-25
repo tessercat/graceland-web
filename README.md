@@ -9,8 +9,9 @@ See the
 [graceland-deploy](https://github.com/tessercat/graceland-deploy)
 repo for more info.
 
-The icon is from
-[Martin on the Noun Project](https://thenounproject.com/martin25044/collection/pear-ui-content/).
+The favicon is from
+[Martin](https://thenounproject.com/martin25044/) and the marquee icon is from
+[Ilham Fitrotul Hayat](https://thenounproject.com/fhilham/).
 
 
 ## Player
