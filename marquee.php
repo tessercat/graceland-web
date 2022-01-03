@@ -24,14 +24,14 @@ $file = '/opt/graceland/media/marquee.json';
 $movies = json_decode(file_get_contents($file));
 foreach ($movies as $movie) {
   $title = ucwords(str_replace('-', ' ', $movie->slug));
-  echo "<article>\n";
-  echo "  <figure>\n";
-  echo "    <a href=\"/player?$movie->slug\" title=\"$title\">\n";
-  echo "      <img src=\"/media/$movie->slug/poster.jpg\">\n";
-  echo "    </a>\n";
-  echo "  </figure>\n";
-  echo "  <figcaption>$movie->description</figcaption>\n";
-  echo "</article>\n";
+  echo "      <article>\n";
+  echo "        <figure>\n";
+  echo "          <a href=\"/player?$movie->slug\" title=\"$title\">\n";
+  echo "            <img src=\"/media/$movie->slug/poster.jpg\">\n";
+  echo "          </a>\n";
+  echo "        </figure>\n";
+  echo "        <figcaption>$movie->description</figcaption>\n";
+  echo "      </article>\n";
 }
 ?>
     </main>
