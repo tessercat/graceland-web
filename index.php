@@ -13,8 +13,8 @@
      <nav>
        <ul>
          <li><a href="/marquee" title="Home movies">Now Playing</a></li>
-         <li><a href="https://daoistic.ca" title="Blogging the unbloggable">Daoistic</a></li>
-         <li><a href="https://github.com/tessercat" title="Hobby projects">GitHub</a></li>
+         <li><a href="https://daoistic.ca" title="Blogging the unbloggable" class="external">Daoistic</a></li>
+         <li><a href="https://github.com/tessercat" title="Hobby projects" class="external">GitHub</a></li>
          <li><a href="/quotes" title="Knowledge, belief, purpose">Quotes</a></li>
          <li><a href="/note" title="Be like water">Note to self</a></li>
          <li><a href="/contact" title="Postmaster">Contact</a></li>
