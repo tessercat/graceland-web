@@ -29,19 +29,19 @@ gets it done but doesn't get credit.
 
 <p>
 It's a lot like water.
-Water helps everyone,
-but it's not proud,
+Water helps everyone
+and doesn't argue,
 it takes people's shit.
 It's consistent,
 open,
 patient,
-gracious,
+kind,
 fair,
 useful
 and adaptable,
-and above all,
-it's not proud,
-so no one resents it.
+and above all
+it doesn't argue
+because nothing's wrong.
 </p>
 
 <p>
