@@ -30,18 +30,18 @@ gets it done but doesn't get credit.
 <p>
 It's a lot like water.
 Water helps everyone
-and doesn't argue,
+and doesn't get upset,
 it takes people's shit.
 It's consistent,
 open,
-patient,
-kind,
+friendly,
+honest,
 fair,
 useful
 and adaptable,
 and above all
-it doesn't argue
-because nothing's wrong.
+it doesn't get upset
+because water doesn't take anything personally.
 </p>
 
 <p>
