@@ -39,9 +39,9 @@ honest,
 fair,
 useful
 and adaptable,
-and above all
-it doesn't get upset
-because water doesn't take anything personally.
+and above all,
+water doesn't get upset
+because it doesn't take anything personally.
 </p>
 
 <p>
